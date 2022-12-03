@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Le Bistrot de Santeuil</title>
+	<link rel="icon" type="image/png" href="images/couverts.png"/>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<style>
+        @import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap%27');
+	</style>
+</head>
+<body>
+	
+	    <header>
+        <div class="container-header">
+            <div class="title">
+                <h1><a href="index.html">Le Bistrot de Santeuil</a></h1>
+                <div class="line"></div>
+                <p>Café, bar, restaurant</p>
+            </div>
+
+            <nav class="navbar">
+                <div class="nav-links">
+                    <ul>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="evenement.html">Evenement</a></li>
+                        <li><a href="reservation.html">Réserver</a></li>
+                    </ul>    
+                </div>
+            </nav>
+
+            <div class="burger-logo">
+                <span></span>
+            </div>
+
+        </div>
+    </header>
+	
+	<main class="main">
+		<div id="main_index">
+		<figure id="menuphone_index">
+			<img src="images/menu1.png" alt="menu1" class="menutel">
+			<img src="images/menu2.png" alt="menu2" class="menutel">
+		</figure>
+
+		<aside id="horraires_index">
+			<p>Horaires :</p>
+			<div class="blackbarre"></div>
+			<p>Lundi : 12H - 15H</p>
+			<div class="blackbarre"></div>
+			<p>Mardi : 12H - 15H</p>
+			<div class="blackbarre"></div>
+			<p>Mercredi : 12H - 15H</p>
+			<div class="blackbarre"></div>
+			<p>Jeudi : Fermé</p>
+			<p id="products">(pour aller vous chercher de bons produits)</p>
+			<div class="blackbarre"></div>
+			<p>Vendredi : 12H - 15H</p>
+			<p>19H - 22H</p>
+			<div class="blackbarre"></div>
+			<p>Samedi : 12H - 15H</p>
+			<p>19H - 22H</p>
+			<div class="blackbarre"></div>
+			<p>Dimanche : Fermé</p>
+			<div class="blackbarre"></div>
+		</aside>
+		<figure id="menudesktop_index">
+			<img src="images/menu1desktop.png" alt="menu1">
+			<img src="images/menu2desktop.png" alt="menu2">
+		</figure>
+	</div>
+	</main>
+
+	<footer>
+        <p>Copyright &copy 2022. Tous droits réservés.</p>
+    </footer>
+
+<script>
+    const menuHamburger = document.querySelector(".burger-logo")
+    const navLinks = document.querySelector(".nav-links")
+    const mobile_main = document.querySelector(".main")
+
+    menuHamburger.addEventListener('click',()=>{
+    navLinks.classList.toggle('mobile-menu')
+    mobile_main.classList.toggle('mobile-main')
+    })
+</script>
+
+</body>
+</html>

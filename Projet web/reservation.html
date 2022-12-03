@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Réserver</title>
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="icon" type="image/png" href="images/couverts.png"/>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+    </style>
+</head>
+<body class="body-eve">
+    <header>
+        <div class="container-header">
+            <div class="title">
+                <h1><a href="index.html">Le Bistrot de Santeuil</a></h1>
+                <div class="line"></div>
+                <p>Café, bar, restaurant</p>
+            </div>
+
+            <nav class="navbar">
+                <div class="nav-links">
+                    <ul>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="evenement.html">Evenement</a></li>
+                        <li><a href="reservation.html">Réserver</a></li>
+                    </ul>    
+                </div>
+            </nav>
+
+            <div class="burger-logo">
+                <span></span>
+            </div>
+
+        </div>
+    </header>
+    <main class="main">
+        <section class="reservation-container">
+
+            <div class="barre">
+                <div class="barre-gauche">
+                </div>
+                <p>Jour de votre réservation</p>
+                <div class="barre-droite"></div>   
+            </div>
+
+            <div class="reservation_btn_haut"> <!-- Evènement concert -->
+                <button>
+                    <p>CONCERT « LITTLE EXTRA THING » samedi 19 novembre</p>
+                </button>
+            </div>
+            <div class="reservation_btn">
+                <button>
+                    <p>Mer. 30 Nov.</p>
+                 </button>
+                 <button>
+                    <p>Ven. 2 Déc.</p>
+                 </button>
+                 <button>
+                    <p>Sam. 3 Déc.</p>
+                 </button>
+                 <button>
+                    <p>Lun. 5 Déc.</p>
+                 </button>
+                 <button>
+                    <p>Mar. 6 Déc.</p>
+                 </button>
+                <button>
+                    <p>Mer. 7 Déc.</p>
+                </button>
+                <button>
+                    <p>Ven. 9 Déc.</p>
+                </button>
+                <button>
+                    <p>Sam. 10 Déc.</p>
+                </button>
+                <button>
+                    <p>Lun. 12 Déc.</p>
+                </button>
+                <button>
+                    <p>Mar. 13 Déc.</p>
+                </button>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer-evenement">
+        <p>Copyright &copy 2022. Tous droits réservés.</p>
+    </footer>
+
+    <script>
+        const menuHamburger = document.querySelector(".burger-logo")
+        const navLinks = document.querySelector(".nav-links")
+        const mobile_main = document.querySelector(".main")
+    
+        menuHamburger.addEventListener('click',()=>{
+        navLinks.classList.toggle('mobile-menu')
+        mobile_main.classList.toggle('mobile-main')
+        })
+    </script>
+</body>
+</html>

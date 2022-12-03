@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evènement</title>
+    <link rel="icon" type="image/png" href="images/couverts.png"/>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap%27');
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container-header">
+            <div class="title">
+                <h1><a href="index.html">Le Bistrot de Santeuil</a></h1>
+                <div class="line"></div>
+                <p>Café, bar, restaurant</p>
+            </div>
+
+            <nav class="navbar">
+                <div class="nav-links">
+                    <ul>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="evenement.html">Evenement</a></li>
+                        <li><a href="reservation.html">Réserver</a></li>
+                    </ul>    
+                </div>
+            </nav>
+
+            <div class="burger-logo">
+                <span></span>
+            </div>
+
+        </div>
+    </header>
+   
+    <main class="main">
+        <div class="container-main">
+            <div class="barre">   
+
+                <div class="barre-gauche"></div>  
+
+                <p class="nos-contact-titre">Nos futurs évenements</p>   
+
+                <div class="barre-droite"></div>
+            </div>
+            <section id="img">
+                
+                    <img class="image" src="https://bistrotdesanteuil.fr/img/LITTLEEXTRATHING.png">
+                           
+                    <img class="image" src="https://scontent-cdt1-1.xx.fbcdn.net/v/t39.30808-6/316956567_541576644634038_97221186471629063_n.jpg?stp=dst-jpg_p960x960&_nc_cat=105&ccb=1-7&_nc_sid=730e14&_nc_ohc=L457ZLiA0q8AX_YNxF4&_nc_ht=scontent-cdt1-1.xx&oh=00_AfAghqBjxs-5CWi1M2AahZGRe3f1wS4Ti0CemN2gZnOTJA&oe=638B4837">
+
+                    <img class="image" src="https://scontent-cdt1-1.xx.fbcdn.net/v/t39.30808-6/314353938_1867647786905041_4346667824628018535_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=730e14&_nc_ohc=_v6idgjPvYYAX_F0nhn&_nc_ht=scontent-cdt1-1.xx&oh=00_AfD-NvHr8PHdQm0JPF2ZN1pwYfMo5L_j14FlkYpqFd8bjg&oe=638B5EF6">
+                    
+            </section>
+
+
+
+            <div class="barre">   
+
+                <div class="barre-gauche"></div>  
+
+                <p class="nos-contact-titre">Être averti de nos futurs évenements</p>   
+
+                <div class="barre-droite"></div>
+            </div>
+            
+
+            <section>
+                <form class="text_demander">
+                    <label class="texte2">Téléphone Portable :</label>
+                    <input class="input"type="text" name="telephone" placeholder="01.02.03.04.05">                    
+                    <label class="texte2">Adresse mail :</label>
+                    <input class="input"type="text" name="adress" placeholder="lebistrot@santeuil.fr"> 
+                    <input class="send" type="submit" value="Envoyer">
+                </form>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <p>Copyright &copy 2022. Tous droits réservés.</p>
+   </footer>
+
+   <script>
+    const menuHamburger = document.querySelector(".burger-logo")
+    const navLinks = document.querySelector(".nav-links")
+    const mobile_main = document.querySelector(".main")
+
+    menuHamburger.addEventListener('click',()=>{
+    navLinks.classList.toggle('mobile-menu')
+    mobile_main.classList.toggle('mobile-main')
+    })
+</script>
+</body>
+</html>
